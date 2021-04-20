@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_stream_m2m_master_item">
+    <sys_sg_item_stream_m2m_master_item action="INSERT_OR_UPDATE">
+        <item_stream display_value="Event Item Stream">6be8a41bdb58a050ffc2fdf9689619cb</item_stream>
+        <master_item display_value="Event master_item">63e8a41bdb58a050ffc2fdf9689619cc</master_item>
+        <sys_class_name>sys_sg_item_stream_m2m_master_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-10 18:55:32</sys_created_on>
+        <sys_id>67e8a41bdb58a050ffc2fdf9689619cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="BCM Mobile" source="x_snc_bcm_mobile">236564d3db58a050ffc2fdf96896190d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BCM Mobile">236564d3db58a050ffc2fdf96896190d</sys_scope>
+        <sys_update_name>sys_sg_item_stream_m2m_master_item_67e8a41bdb58a050ffc2fdf9689619cc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-10 18:55:32</sys_updated_on>
+    </sys_sg_item_stream_m2m_master_item>
+</record_update>

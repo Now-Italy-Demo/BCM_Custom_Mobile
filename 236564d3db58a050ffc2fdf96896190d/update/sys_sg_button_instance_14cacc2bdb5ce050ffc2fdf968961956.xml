@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_button_instance">
+    <sys_sg_button_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <button display_value="Start Event">fe39c0e7db5ce050ffc2fdf968961997</button>
+        <color_theme>primary</color_theme>
+        <description/>
+        <field_name/>
+        <icon/>
+        <label>Start Event</label>
+        <location>top</location>
+        <name>Start Event</name>
+        <order>10</order>
+        <parent>6be8a41bdb58a050ffc2fdf9689619ca</parent>
+        <parent_table>sys_sg_screen</parent_table>
+        <sys_class_name>sys_sg_button_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-11 11:22:10</sys_created_on>
+        <sys_id>14cacc2bdb5ce050ffc2fdf968961956</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Start Event</sys_name>
+        <sys_package display_value="BCM Mobile" source="x_snc_bcm_mobile">236564d3db58a050ffc2fdf96896190d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BCM Mobile">236564d3db58a050ffc2fdf96896190d</sys_scope>
+        <sys_update_name>sys_sg_button_instance_14cacc2bdb5ce050ffc2fdf968961956</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-11 11:22:10</sys_updated_on>
+        <table>sn_recovery_event</table>
+    </sys_sg_button_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=14cacc2bdb5ce050ffc2fdf968961956"/>
+</record_update>

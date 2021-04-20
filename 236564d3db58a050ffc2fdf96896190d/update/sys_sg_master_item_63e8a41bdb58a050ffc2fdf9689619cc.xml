@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_master_item">
+    <sys_sg_master_item action="INSERT_OR_UPDATE">
+        <condition_order/>
+        <datasource_table>sn_recovery_event</datasource_table>
+        <datasource_table_condition/>
+        <embedded_screen display_value="Event Form Screen">6be8a41bdb58a050ffc2fdf9689619ca</embedded_screen>
+        <item_view display_value="Event List Screen Item View">6fe8a41bdb58a050ffc2fdf9689619c9</item_view>
+        <name>Event master_item</name>
+        <sys_class_name>sys_sg_master_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-10 18:55:32</sys_created_on>
+        <sys_id>63e8a41bdb58a050ffc2fdf9689619cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event master_item</sys_name>
+        <sys_package display_value="BCM Mobile" source="x_snc_bcm_mobile">236564d3db58a050ffc2fdf96896190d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BCM Mobile">236564d3db58a050ffc2fdf96896190d</sys_scope>
+        <sys_update_name>sys_sg_master_item_63e8a41bdb58a050ffc2fdf9689619cc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-10 18:55:32</sys_updated_on>
+    </sys_sg_master_item>
+</record_update>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_write_back_action_item">
+    <sys_sg_write_back_action_item action="INSERT_OR_UPDATE">
+        <description>Start a recovery event</description>
+        <execution_script><![CDATA[(function WriteBackAction(input) {
+    //Type appropriate comment here, and begin script below
+    gs.info('Parto', 'ANTONIODEBUG');
+
+    var eventID = input.event_id;
+
+    gs.info('il parametro: ' + eventID, 'ANTONIODEBUG');
+
+    var recoveryEvent = new GlideRecord('sn_recovery_event');
+    recoveryEvent.addQuery('sys_id', eventID);
+    recoveryEvent.query();
+
+    if (recoveryEvent.next()) {
+
+        gs.info('ci sono', 'ANTONIODEBUG');
+
+        var activatedPlans = new GlideRecord('sn_recovery_activated_plan');
+        activatedPlans.addQuery('event', eventID);
+        activatedPlans.query();
+
+        while (activatedPlans.next()) {
+
+            var tasks = new GlideRecord('sn_bcp_recovery_task');
+            tasks.addQuery('plan', activatedPlans.getValue('plan'));
+            tasks.query();
+
+            while (tasks.next()) {
+                var eventTask = new GlideRecord('sn_recovery_event_task');
+                eventTask.setValue('parent', eventID);
+                eventTask.setValue('activated_plan', activatedPlans.getUniqueValue());
+                eventTask.setValue('recovery_task', tasks.getUniqueValue());
+                eventTask.setValue('short_description', tasks.getValue('short_description'));
+                eventTask.setValue('description', tasks.getValue('description'));
+                eventTask.insert();
+            }
+        }
+
+        recoveryEvent.setValue('state', '20');
+        recoveryEvent.update();
+
+    }
+
+})(input);]]></execution_script>
+        <name>Start Event</name>
+        <query_condition/>
+        <sys_class_name>sys_sg_write_back_action_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-11 10:02:03</sys_created_on>
+        <sys_id>fa073f17dbd8e050ffc2fdf96896191b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Start Event</sys_name>
+        <sys_package display_value="BCM Mobile" source="x_snc_bcm_mobile">236564d3db58a050ffc2fdf96896190d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BCM Mobile">236564d3db58a050ffc2fdf96896190d</sys_scope>
+        <sys_update_name>sys_sg_write_back_action_item_fa073f17dbd8e050ffc2fdf96896191b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-11 13:02:01</sys_updated_on>
+        <table>sn_bcp_recovery_task</table>
+        <template/>
+        <type>script</type>
+        <use_current_record_as_condition>true</use_current_record_as_condition>
+        <use_fields_for_ref_lookup>false</use_fields_for_ref_lookup>
+    </sys_sg_write_back_action_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=fa073f17dbd8e050ffc2fdf96896191b"/>
+</record_update>

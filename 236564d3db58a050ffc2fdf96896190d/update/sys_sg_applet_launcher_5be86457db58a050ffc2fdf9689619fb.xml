@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_applet_launcher">
+    <sys_sg_applet_launcher action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <available_offline>true</available_offline>
+        <header_button display_value="BCM Mobile Launcher Button Instance">523be4dbdb58a050ffc2fdf9689619af</header_button>
+        <header_titles/>
+        <hide_empty_sections>true</hide_empty_sections>
+        <name>BCM Mobile</name>
+        <required_roles>sn_bcm.admin,sn_bcm.core_manager,sn_bcm.core_viewer,sn_bcm.planner,sn_bcm.program_manager,sn_bcm.viewer,sn_bcp.plan_admin,sn_bcp.plan_contributor,sn_bcp.plan_manager,sn_bcp.plan_viewer,sn_bia.bia_admin,sn_bia.bia_viewer,sn_bia.bia_manager,sn_bia.bia_contributor</required_roles>
+        <search_config/>
+        <sys_class_name>sys_sg_applet_launcher</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-10 18:55:31</sys_created_on>
+        <sys_id>5be86457db58a050ffc2fdf9689619fb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>BCM Mobile</sys_name>
+        <sys_package display_value="BCM Mobile" source="x_snc_bcm_mobile">236564d3db58a050ffc2fdf96896190d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BCM Mobile">236564d3db58a050ffc2fdf96896190d</sys_scope>
+        <sys_update_name>sys_sg_applet_launcher_5be86457db58a050ffc2fdf9689619fb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-10 19:05:33</sys_updated_on>
+        <title>BCM Mobile</title>
+    </sys_sg_applet_launcher>
+</record_update>
